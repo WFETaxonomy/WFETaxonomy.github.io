@@ -1824,7 +1824,7 @@
                 // Handle collapsible toggling
                 const header = event.target;
                 const content = header.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                content.style.display = content.style.display === 'block';// ? 'none' : 'block';
             } else if (event.target.matches('#expand-all')) {
                 // Handle expanding all collapsibles
                 const popupContent = event.target.closest('.popup-content-details');
